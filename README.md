@@ -1,7 +1,10 @@
 # react-native-insta-alura
 Protótipo de uma rede social utilizando React Native. Estudos sobre o framework.
 
-Comandos
+## Comandos
 
-react-native start
-react-native run-android
+Para iniciar a aplicação
+- react-native start
+
+Para fazer o build 
+- react-native run-android
