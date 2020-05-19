@@ -15,12 +15,12 @@ const ImageUser = ({urlImage, description, quantityLikes}) => {
   return (
     <Fragment>
       <Image source={{uri: urlImage}} style={styles.image} />
-      <Text>{description}</Text>
+      <Text style={styles.description}>{description}</Text>
       <View style={styles.viewLike}>
         <TouchableOpacity onPress={clickedLiked}>
           <Image source={imageLike(liked)} style={styles.like} />
         </TouchableOpacity>
-        <Text>curtidas {likes}</Text>
+        <Text style={styles.textLike}>curtidas {likes}</Text>
       </View>
     </Fragment>
   );
