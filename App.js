@@ -1,5 +1,5 @@
 import React, {Fragment, useState, useEffect} from 'react';
-import {AppRegistry, ScrollView, FlatList} from 'react-native';
+import {AppRegistry, FlatList} from 'react-native';
 import MyHeader from './src/components/Header/Header';
 import ImageUser from './src/components/Image/Image';
 import Comment from './src/components/Comment/Comment';
@@ -15,23 +15,21 @@ const App = () => {
     getImages(setImages);
   }, []);
   return (
-    <ScrollView>
-      <FlatList
-        data={images}
-        keyExtractor={(item) => item.id.toString()}
-        renderItem={({item}) => (
-          <Fragment>
-            <MyHeader nameUser={item.userName} urlImage={item.userURL} />
-            <ImageUser
-              urlImage={item.url}
-              description={item.description}
-              quantityLikes={item.likes}
-            />
-            <Comment comments={item.comentarios} />
-          </Fragment>
-        )}
-      />
-    </ScrollView>
+    <FlatList
+      data={images}
+      keyExtractor={(item) => item.id.toString()}
+      renderItem={({item}) => (
+        <Fragment>
+          <MyHeader nameUser={item.userName} urlImage={item.userURL} />
+          <ImageUser
+            urlImage={item.url}
+            description={item.description}
+            quantityLikes={item.likes}
+          />
+          <Comment comments={item.comentarios} />
+        </Fragment>
+      )}
+    />
   );
 };
 export default App;
