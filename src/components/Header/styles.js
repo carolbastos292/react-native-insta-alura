@@ -2,8 +2,8 @@ import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   imageUser: {
-    width: 50,
-    height: 50,
+    width: 30,
+    height: 30,
     margin: 10,
     borderRadius: 30,
   },
