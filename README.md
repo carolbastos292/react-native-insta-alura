@@ -1,4 +1,4 @@
-# react-native-insta-alura
+# react-native-social-network
 Protótipo de uma rede social utilizando React Native. Estudos sobre o framework.
 
 ## Comandos
